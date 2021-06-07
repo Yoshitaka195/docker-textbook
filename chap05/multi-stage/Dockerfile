@@ -17,3 +17,7 @@ WORKDIR /opt/greet/bin
 # Deploy modules
 COPY --from=builder /go/src/github.com/asashiho/dockertext-greet/ .
 ENTRYPOINT ["./greet"]
+
+LABEL TITLE = "Multi-Stage Dockerfile"
+
+LABEL DESCRIPTION = "マルチステージファイルのためのDockerfile"
